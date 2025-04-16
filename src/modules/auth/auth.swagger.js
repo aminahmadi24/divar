@@ -73,3 +73,16 @@
  *          401:
  *              description: Unautorized
  */
+/**
+ * @swagger
+ * /auth/logout:
+ *  get:
+ *      summary: Logout user 
+ *      tags:
+ *          -   Auth
+ *      responses:
+ *          200:
+ *              description: Success
+ *          401:
+ *              description: Unautorized
+ */

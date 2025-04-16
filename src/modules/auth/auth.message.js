@@ -4,6 +4,7 @@ const authMessage = {
     sendOtpSuccessfully: "Otp was sent successfully",
     otpCodeIsExpired: "Otp code is expired",
     otpCodeIsIncorrect: "Otp code is incorrect",
-    loginSuccessful: "Login was successful",
+    loginSuccessful: "Login was successfully",
+    logoutSuccessful: "Logout was successfully"
 }
 module.exports = authMessage;
