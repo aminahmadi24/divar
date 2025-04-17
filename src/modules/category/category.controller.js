@@ -21,8 +21,10 @@ class CategoryController {
             next(error);
         }
     }
-    async find() {
+    async find(req, res, next) {
         const categories = await this.#service.find();
         return res.json(categories);
     }
 }
+
+module.exports = new CategoryController();
