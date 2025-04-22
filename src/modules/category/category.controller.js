@@ -25,6 +25,13 @@ class CategoryController {
         const categories = await this.#service.find();
         return res.json(categories);
     }
+    async remove(req, res, next) {
+        const { id } = req.params;
+        await this.#service.remove(id);
+        return res.json({
+            message: categoryMessage.categoryRemoved
+        })
+    }
 }
 
 module.exports = new CategoryController();
